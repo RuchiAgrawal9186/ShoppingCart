@@ -1,0 +1,56 @@
+.productsConatiner
+{
+    width: 90%;
+    display:grid ;
+    grid-template-columns: repeat(5,1fr);
+    gap:15px;
+    margin: auto;
+    color: black;
+}
+.productsDiv{
+    text-align: center;
+    padding: 15px 6px;
+    height:270px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+}
+.productsDiv:hover {
+    transform: scale(1.1); /* Scale the item by 10% on hover */
+  }
+.productsDiv img{
+    width:100px;
+    height: 100px;
+}
+
+.productsDiv button{
+    background-color: blueviolet;
+    color:white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: blueviolet 0.3s;
+    border-radius: 6px;
+}
+.productsDiv button:hover {
+    background-color:purple;
+  }
+  .productsDiv .button:active {
+    background-color:purple;
+  }
+
+ 
+
+
+  @media screen and (min-width:300px) and (max-width:700px){
+    .productsConatiner
+{
+    width: 100%;
+    display:grid ;
+    grid-template-columns: repeat(1,1fr);
+    gap:15px;
+    margin: auto;
+    color: black;
+}
+
+
+  }
